@@ -61,13 +61,13 @@
     <!-- Seção: Sobre -->
     <section id="sobre" class="section-card scroll-margin">
       <h2>O Jogo</h2>
-      <p>Desenvolvido por <strong>Raue</strong>, o <strong>Batalha de Dados</strong> adapta a genial mecânica de
+      <p>Desenvolvido por <strong>Raue</strong>, o <strong>Batalha de Dados</strong> adapta a mecânica de
         escalada do jogo de cartas <em>Scout</em> para o mundo dos dados físicos. Em vez de cartas na mão, os jogadores
         rolam dados a cada rodada e utilizam meeples para gerenciar uma reserva estratégica diretamente no tabuleiro.
       </p>
-      <p>O desafio consiste em superar a <strong>Jogada Ativa</strong> deixada pelo oponente. Quando você não consegue
-        fazer isso, deve pagar pontos ao adversário para "recrutar" (Scout) os dados dele, usando-os para virar a mesa
-        na próxima rodada!</p>
+      <p>O desafio consiste em superar a <strong>Jogada Ativa</strong> deixada pelo oponente — cada vitória vale
+        <strong>1 ponto</strong>. Quando você não consegue fazer isso, dá um <strong>Scout</strong>: o dono da jogada
+        ganha 1 ponto e você recruta um dado da extremidade para tentar virar a mesa no mesmo turno.</p>
     </section>
 
     <!-- Seção: Componentes -->
@@ -86,7 +86,7 @@
             <span class="meeple-preview meeple-red"></span>
           </div>
           <h3>18 Meeples</h3>
-          <p>6 meeples de cada cor (azul, verde e vermelho) para até 3 jogadores. 5 servem para guardar dados no
+          <p>6 meeples de cada cor. 5 servem para guardar dados no
             tabuleiro e 1 serve para marcar a pontuação.</p>
         </div>
         <div class="component-item">
@@ -106,42 +106,13 @@
       </div>
     </section>
 
-    <!-- Seção: Preparação -->
-    <section id="preparacao" class="section-card scroll-margin">
-      <h2>🛠️ Preparação (Setup)</h2>
-      <ol class="setup-list">
-        <li>
-          <div class="setup-step-num">1</div>
-          <p>Cada jogador escolhe uma cor e recebe seus <strong>6 Meeples</strong>.</p>
-        </li>
-        <li>
-          <div class="setup-step-num">2</div>
-          <p>Posicione <strong>1 Meeple</strong> de cada jogador na trilha de pontuação do tabuleiro (no espaço inicial
-            antes do 1).</p>
-        </li>
-        <li>
-          <div class="setup-step-num">3</div>
-          <p>Coloque os <strong>5 Meeples</strong> restantes na reserva pessoal de cada jogador.</p>
-        </li>
-        <li>
-          <div class="setup-step-num">4</div>
-          <p>As <strong>6 Pedras Brancas</strong> e os <strong>4 Dados Físicos</strong> são colocados no centro da mesa.
-          </p>
-        </li>
-        <li>
-          <div class="setup-step-num">5</div>
-          <p>O primeiro jogador é o que tem a cabeça mais quadrada.</p>
-        </li>
-      </ol>
-    </section>
-
     <!-- Seção: Conceitos -->
     <section id="conceitos" class="section-card scroll-margin">
       <h2>💡 Conceitos Fundamentais</h2>
 
       <div class="concept-block">
         <h3>1. A Jogada Ativa</h3>
-        <p>A Jogada Ativa é a combinação atual na mesa marcada com as Pedras Brancas. Ela pode ter de <strong>2 a 6
+        <p>A Jogada Ativa é a combinação atual na mesa marcada com as Pedras Brancas. Ela pode ter de <strong>1 a 6
             dados</strong> e se enquadra em um dos tipos abaixo:</p>
         <div class="combination-types">
           <div class="combo-card">
@@ -174,19 +145,19 @@
           prioridade:</p>
         <ol class="rules-list">
           <li><strong>Tamanho do Grupo:</strong> Jogadas com mais dados vencem jogadas com menos dados.
-            <div class="rule-example"><code>1-2-3</code> (3 dados) <span class="win-arrow">➔ vence</span>
+            <div class="rule-example"><code>1-2-3</code> (3 dados) <span class="win-arrow">vence</span>
               <code>6-6</code> (2 dados)</div>
           </li>
           <li><strong>Tipo de Combinação:</strong> Em caso de empate em tamanho, <strong>Dados Iguais</strong> vencem
             <strong>Sequência</strong>.
-            <div class="rule-example"><code>4-4-4</code> (Trinca) <span class="win-arrow">➔ vence</span>
+            <div class="rule-example"><code>4-4-4</code> (Trinca) <span class="win-arrow">vence</span>
               <code>2-3-4</code> (Sequência)</div>
           </li>
           <li><strong>Valor do Grupo:</strong> Em empate de tamanho e tipo:
             <ul>
-              <li>Para <strong>Dados Iguais</strong>: Vence o de maior valor (<code>6-6-6</code> vence
+              <li>Para <strong>Dados Iguais</strong>: Vence o de maior valor (<code>6-6-6</code> <span class="win-arrow">vence</span>
                 <code>4-4-4</code>).</li>
-              <li>Para <strong>Sequências</strong>: Vence a que termina com o maior valor (<code>4-5-6</code> vence
+              <li>Para <strong>Sequências</strong>: Vence a que termina com o maior valor (<code>4-5-6</code> <span class="win-arrow">vence</span>
                 <code>2-3-4</code>, pois 6 é maior que 4).</li>
             </ul>
           </li>
@@ -195,8 +166,8 @@
 
       <div class="concept-block">
         <h3>📥 Guardar Dados</h3>
-        <p>Ao final da sua jogada, se restou algum dado físico da rolagem que não foi usado na combinação, você pode
-          <strong>guardá-lo</strong>:</p>
+        <p>Ao final da sua jogada, se sobrarem dados físicos da rolagem que não foram usados na combinação, você pode
+          <strong>guardar apenas 1 deles</strong> por rodada:</p>
         <ul class="styled-list">
           <li>Coloque <strong>1 Meeple</strong> da sua cor no tabuleiro sobre o desenho da face correspondente ao dado
             guardado.</li>
@@ -231,23 +202,28 @@
                 <p>Crie uma combinação com seus dados rolados e/ou dados resgatados do seu tabuleiro que supere a Jogada
                   Ativa atual.</p>
                 <div class="action-steps">
-                  <span>1. Remova as Pedras Brancas anteriores do tabuleiro.</span>
-                  <span>2. Coloque as Pedras Brancas nos números da sua nova combinação.</span>
-                  <span>3. (Opcional) Guarde 1 dado sobressalente da rolagem física com seu Meeple.</span>
+                  <span>1. Você ganha <strong>1 ponto</strong> na trilha (na jogada inicial da partida, quando ainda não há
+                    Jogada Ativa, não há pontuação).</span>
+                  <span>2. Remova as Pedras Brancas anteriores do tabuleiro.</span>
+                  <span>3. Coloque as Pedras Brancas nos números da sua nova combinação.</span>
+                  <span>4. (Opcional) Guarde 1 dado sobressalente da rolagem física com seu Meeple.</span>
                 </div>
               </div>
 
               <div class="action-card secondary-border">
                 <h4>Opção B: Retirar Dado (Scout)</h4>
-                <p>Use esta opção se não conseguir (ou não quiser) vencer a Jogada Ativa atual na mesa.</p>
+                <p>Use esta opção se não conseguir (ou não quiser) vencer a Jogada Ativa atual na mesa. Você pode fazer
+                  <strong>apenas 1 Scout por turno</strong>.</p>
                 <div class="action-steps">
-                  <span>1. O oponente que fez a jogada ativa ganha <strong>1 ponto</strong> na trilha do tabuleiro.</span>
+                  <span>1. Se a Jogada Ativa for de <strong>outro jogador</strong>, o dono dela ganha <strong>1 ponto</strong>
+                    na trilha. Se for a <strong>sua própria</strong> jogada, retire o dado normalmente, mas
+                    <strong>não receba</strong> o ponto de Scout.</span>
                   <span>2. Retire <strong>um dado das extremidades</strong> da Jogada Ativa atual (remova 1 pedra branca
                     correspondente).</span>
                   <span>3. Tente fazer uma combinação vencedora somando esse dado retirado aos seus dados rolados e/ou
-                    guardados.</span>
-                  <span>4. <em>Se ainda não conseguir:</em> O oponente ganha <strong>mais 1 ponto</strong>, você retira <strong>mais um dado</strong> da
-                    extremidade, e repete o ciclo até conseguir vencer a jogada residual.</span>
+                    guardados. Se conseguir, você também ganha <strong>1 ponto</strong> pela vitória (Opção A).</span>
+                  <span>4. <em>Se ainda não conseguir:</em> seu turno termina. A jogada residual permanece na mesa e o
+                    jogo passa para o próximo jogador.</span>
                 </div>
               </div>
             </div>
@@ -355,7 +331,8 @@
               <p><strong>Ação:</strong> J2 precisa vencer o Par de <code>4</code> (tamanho 2) do oponente. Ele escolhe
                 fazer uma Sequência de 3 dados usando os números <code>1, 2, 3</code> (tamanho 3).</p>
               <ul class="step-bullets">
-                <li>Como uma jogada de tamanho 3 vence uma de tamanho 2, J2 vence a Jogada Ativa.</li>
+                <li>Como uma jogada de tamanho 3 vence uma de tamanho 2, J2 vence a Jogada Ativa e ganha
+                  <strong>1 ponto</strong>.</li>
                 <li>As pedras brancas do número <code>4</code> são retiradas. J2 posiciona 3 pedras brancas: uma no
                   <code>1</code>, no <code>2</code> e no <code>3</code> do tabuleiro.</li>
                 <li>J2 guarda o dado <code>5</code> que sobrou de sua rolagem (coloca 1 Meeple Verde na face
@@ -368,7 +345,7 @@
                 <div class="diagram-title">Visualização do Tabuleiro</div>
                 <div class="score-display">
                   <span class="score-badge j1-badge">J1: 0 pts</span>
-                  <span class="score-badge j2-badge">J2: 0 pts</span>
+                  <span class="score-badge j2-badge highlight-score">J2: 1 pt</span>
                 </div>
               </div>
               <div class="board-wrapper">
@@ -448,7 +425,8 @@
                 <li>J1 retira o Meeple Azul do <code>6</code> no tabuleiro, resgatando esse dado guardado no Turno 1.
                 </li>
                 <li>Ele junta o <code>6</code> resgatado com os dois dados <code>6</code> que acabou de rolar,
-                  anunciando a Jogada Ativa <strong><code>6-6-6</code></strong> (Trinca de 6).</li>
+                  anunciando a Jogada Ativa <strong><code>6-6-6</code></strong> (Trinca de 6) e ganhando
+                  <strong>1 ponto</strong> pela vitória.</li>
                 <li>As pedras brancas dos números <code>1, 2, 3</code> são removidas e reposicionadas na face
                   <code>6</code> (x3).</li>
                 <li>Com os dados restantes rolados (<code>2, 3</code>), J1 escolhe guardar o <code>3</code> colocando
@@ -460,8 +438,8 @@
               <div class="diagram-header">
                 <div class="diagram-title">Visualização do Tabuleiro</div>
                 <div class="score-display">
-                  <span class="score-badge j1-badge">J1: 0 pts</span>
-                  <span class="score-badge j2-badge">J2: 0 pts</span>
+                  <span class="score-badge j1-badge highlight-score">J1: 1 pt</span>
+                  <span class="score-badge j2-badge">J2: 1 pt</span>
                 </div>
               </div>
               <div class="board-wrapper">
@@ -537,16 +515,14 @@
               <p><strong>Ação:</strong> J2 percebe que seus dados não podem bater a Trinca de <code>6</code> (tamanho 3)
                 de J1. Ele é obrigado a fazer um <strong>Scout (Retirar Dado)</strong>:</p>
               <ul class="step-bullets">
-                <li><strong>Pontuação:</strong> O criador da jogada ativa (J1) ganha <strong>1 ponto</strong> imediatamente na trilha
-                  de pontos.</li>
-                <li><strong>Scout:</strong> J2 retira um dado <code>6</code> da extremidade da jogada ativa (removendo
-                  uma pedra branca do <code>6</code>). A jogada ativa restante na mesa é enfraquecida, virando <strong><code>6-6</code></strong>
-                  (Par de 6, tamanho 2).</li>
-                <li><strong>Combinação:</strong> Agora com o <code>6</code> retirado em mãos, J2 o combina com o
-                  <code>5</code> resgatado (retirando seu meeple verde do <code>5</code>) e com um <code>4</code>
-                  rolado, formando a Sequência <strong><code>4-5-6</code></strong> (tamanho 3).</li>
-                <li>Como a sequência de tamanho 3 (<code>4-5-6</code>) vence a Jogada Ativa restante de tamanho 2 (<code>6-6</code>), J2
-                  completa seu turno! As pedras brancas são postas no <code>4, 5, 6</code>.</li>
+                <li><strong>Scout:</strong> Como a jogada é de J1, J1 ganha <strong>1 ponto</strong> imediatamente. J2
+                  retira um dado <code>6</code> da extremidade (removendo uma pedra branca). A jogada residual vira
+                  <strong><code>6-6</code></strong> (Par de 6, tamanho 2).</li>
+                <li><strong>Combinação:</strong> Com o <code>6</code> retirado, J2 o combina com o <code>5</code>
+                  resgatado (retirando seu meeple verde) e com um <code>4</code> rolado, formando a Sequência
+                  <strong><code>4-5-6</code></strong> (tamanho 3).</li>
+                <li>Como a sequência de tamanho 3 vence o residual de tamanho 2, J2 vence e ganha também
+                  <strong>1 ponto</strong> pela vitória. As pedras brancas vão para <code>4, 5, 6</code>.</li>
                 <li>J2 guarda o outro dado <code>4</code> que sobrou de sua rolagem (coloca 1 Meeple Verde no
                   <code>4</code>).</li>
               </ul>
@@ -556,8 +532,8 @@
               <div class="diagram-header">
                 <div class="diagram-title">Visualização do Tabuleiro</div>
                 <div class="score-display">
-                  <span class="score-badge j1-badge highlight-score">J1: 1 pt</span>
-                  <span class="score-badge j2-badge">J2: 0 pts</span>
+                  <span class="score-badge j1-badge highlight-score">J1: 2 pts</span>
+                  <span class="score-badge j2-badge highlight-score">J2: 2 pts</span>
                 </div>
               </div>
               <div class="board-wrapper">
