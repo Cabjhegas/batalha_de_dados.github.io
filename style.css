@@ -625,19 +625,20 @@ blockquote strong {
 
 .action-choices {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
   margin-top: 20px;
 }
 
 .action-card {
   background: rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius-md);
-  padding: 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   border: 1px solid transparent;
+  min-width: 0; /* evita overflow em grids estreitos */
 }
 
 .action-card.primary-border {
@@ -661,20 +662,22 @@ blockquote strong {
 .action-steps {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-size: 0.9rem;
+  gap: 10px;
+  font-size: 0.95rem;
+  line-height: 1.55;
   color: var(--text-main);
 }
 
 .action-steps span {
   position: relative;
-  padding-left: 20px;
+  padding-left: 16px;
+  overflow-wrap: break-word;
 }
 
 .action-steps span::before {
   content: '•';
   position: absolute;
-  left: 4px;
+  left: 0;
   color: var(--primary);
   font-weight: bold;
 }
@@ -1072,15 +1075,46 @@ blockquote strong {
   }
   
   .section-card {
-    padding: 24px;
+    padding: 20px;
   }
   
   .combination-types {
     grid-template-columns: 1fr;
   }
-  
+
+  /* Timeline empilha o número acima do conteúdo para liberar largura de leitura */
+  .timeline::before {
+    left: 17px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 0;
+  }
+
+  .timeline-num {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .timeline-body {
+    padding: 16px;
+  }
+
   .action-choices {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .action-card {
+    padding: 16px;
+  }
+
+  .action-card h4 {
+    font-size: 1.05rem;
+    line-height: 1.35;
   }
   
   .end-conditions {
@@ -1113,5 +1147,17 @@ blockquote strong {
   
   .manual-step-card {
     padding: 16px;
+  }
+
+  .section-card {
+    padding: 16px;
+  }
+
+  .timeline-body {
+    padding: 14px;
+  }
+
+  .action-card {
+    padding: 14px;
   }
 }
