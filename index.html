@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Manual de regras oficial do jogo de tabuleiro Batalha de Dados, baseado no jogo de cartas Scout e jogado com dados.">
+  <meta name="description"
+    content="Manual de regras oficial do jogo de tabuleiro Batalha de Dados, baseado no jogo de cartas Scout e jogado com dados.">
   <title>Batalha de Dados - Manual Oficial</title>
-  
+
   <!-- Fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
   <!-- CSS Principal -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Barra de Navegação -->
@@ -23,6 +28,7 @@
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#componentes">Componentes</a></li>
+        <li><a href="#preparacao">Preparação</a></li>
         <li><a href="#conceitos">Conceitos</a></li>
         <li><a href="#turno">Como Jogar</a></li>
         <li><a href="#exemplo">Exemplo Prático</a></li>
@@ -37,14 +43,15 @@
       <div class="hero-content">
         <span class="badge">Jogo de Tabuleiro & Estratégia</span>
         <h1>Batalha de Dados</h1>
-        <p class="hero-lead">Um duelo tático de dados e posicionamento inspirado no clássico jogo de cartas <em>Scout</em>.</p>
+        <p class="hero-lead">Um duelo tático de dados e posicionamento inspirado no clássico jogo de cartas
+          <em>Scout</em>.</p>
         <div class="hero-buttons">
           <a href="#turno" class="btn btn-primary">Aprender as Regras</a>
           <a href="#exemplo" class="btn btn-secondary">Ver Exemplo de Turno</a>
         </div>
       </div>
       <div class="hero-image-wrapper">
-        <img src="assets/hero_board.png" alt="Tabuleiro da Batalha de Dados com componentes" class="hero-img">
+        <img src="assets/Tabuleiro Batalha de Dados.jpeg" alt="Tabuleiro da Batalha de Dados" class="hero-img">
       </div>
     </div>
   </header>
@@ -54,8 +61,13 @@
     <!-- Seção: Sobre -->
     <section id="sobre" class="section-card scroll-margin">
       <h2>O Jogo</h2>
-      <p>Desenvolvido por <strong>Raue</strong>, o <strong>Batalha de Dados</strong> adapta a genial mecânica de escalada do jogo de cartas <em>Scout</em> para o mundo dos dados físicos. Em vez de cartas na mão, os jogadores rolam dados a cada rodada e utilizam meeples para gerenciar uma reserva estratégica diretamente no tabuleiro.</p>
-      <p>O desafio consiste em superar a <strong>Jogada Ativa</strong> deixada pelo oponente. Quando você não consegue fazer isso, deve pagar pontos ao adversário para "recrutar" (Scout) os dados dele, usando-os para virar a mesa na próxima rodada!</p>
+      <p>Desenvolvido por <strong>Raue</strong>, o <strong>Batalha de Dados</strong> adapta a genial mecânica de
+        escalada do jogo de cartas <em>Scout</em> para o mundo dos dados físicos. Em vez de cartas na mão, os jogadores
+        rolam dados a cada rodada e utilizam meeples para gerenciar uma reserva estratégica diretamente no tabuleiro.
+      </p>
+      <p>O desafio consiste em superar a <strong>Jogada Ativa</strong> deixada pelo oponente. Quando você não consegue
+        fazer isso, deve pagar pontos ao adversário para "recrutar" (Scout) os dados dele, usando-os para virar a mesa
+        na próxima rodada!</p>
     </section>
 
     <!-- Seção: Componentes -->
@@ -74,7 +86,8 @@
             <span class="meeple-preview meeple-red"></span>
           </div>
           <h3>18 Meeples</h3>
-          <p>6 meeples de cada cor (azul, verde e vermelho) para até 3 jogadores. 5 servem para guardar dados no tabuleiro e 1 serve para marcar a pontuação.</p>
+          <p>6 meeples de cada cor (azul, verde e vermelho) para até 3 jogadores. 5 servem para guardar dados no
+            tabuleiro e 1 serve para marcar a pontuação.</p>
         </div>
         <div class="component-item">
           <div class="component-icon">
@@ -87,25 +100,58 @@
         <div class="component-item">
           <div class="component-icon">🗺️</div>
           <h3>1 Tabuleiro</h3>
-          <p>Contém ilustrações das faces do dado de 1 a 6 para reserva de dados e uma trilha de pontuação que vai de 1 a 15 pontos.</p>
+          <p>Contém ilustrações das faces do dado de 1 a 6 para reserva de dados e uma trilha de pontuação que vai de 1
+            a 15 pontos.</p>
         </div>
       </div>
+    </section>
+
+    <!-- Seção: Preparação -->
+    <section id="preparacao" class="section-card scroll-margin">
+      <h2>🛠️ Preparação (Setup)</h2>
+      <ol class="setup-list">
+        <li>
+          <div class="setup-step-num">1</div>
+          <p>Cada jogador escolhe uma cor e recebe seus <strong>6 Meeples</strong>.</p>
+        </li>
+        <li>
+          <div class="setup-step-num">2</div>
+          <p>Posicione <strong>1 Meeple</strong> de cada jogador na trilha de pontuação do tabuleiro (no espaço inicial
+            antes do 1).</p>
+        </li>
+        <li>
+          <div class="setup-step-num">3</div>
+          <p>Coloque os <strong>5 Meeples</strong> restantes na reserva pessoal de cada jogador.</p>
+        </li>
+        <li>
+          <div class="setup-step-num">4</div>
+          <p>As <strong>6 Pedras Brancas</strong> e os <strong>4 Dados Físicos</strong> são colocados no centro da mesa.
+          </p>
+        </li>
+        <li>
+          <div class="setup-step-num">5</div>
+          <p>O primeiro jogador é o que tem a cabeça mais quadrada.</p>
+        </li>
+      </ol>
     </section>
 
     <!-- Seção: Conceitos -->
     <section id="conceitos" class="section-card scroll-margin">
       <h2>💡 Conceitos Fundamentais</h2>
-      
+
       <div class="concept-block">
         <h3>1. A Jogada Ativa</h3>
-        <p>A Jogada Ativa é a combinação atual na mesa marcada com as Pedras Brancas. Ela pode ter de <strong>2 a 6 dados</strong> e se enquadra em um dos tipos abaixo:</p>
+        <p>A Jogada Ativa é a combinação atual na mesa marcada com as Pedras Brancas. Ela pode ter de <strong>2 a 6
+            dados</strong> e se enquadra em um dos tipos abaixo:</p>
         <div class="combination-types">
           <div class="combo-card">
             <h4>Dados Iguais (Sets)</h4>
             <p>Todos os dados possuem o mesmo valor.</p>
             <div class="visual-example">
-              <div class="die value-4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-              <div class="die value-4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <div class="die value-4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                  class="dot"></span></div>
+              <div class="die value-4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                  class="dot"></span></div>
               <span class="example-text">Exemplo: Par de 4 (Tamanho 2)</span>
             </div>
           </div>
@@ -124,18 +170,24 @@
 
       <div class="concept-block">
         <h3>⚔️ Hierarquia de Força</h3>
-        <p>Para vencer a Jogada Ativa do adversário, a sua nova jogada deve ser superior seguindo esta ordem de prioridade:</p>
+        <p>Para vencer a Jogada Ativa do adversário, a sua nova jogada deve ser superior seguindo esta ordem de
+          prioridade:</p>
         <ol class="rules-list">
           <li><strong>Tamanho do Grupo:</strong> Jogadas com mais dados vencem jogadas com menos dados.
-            <div class="rule-example"><code>1-2-3</code> (3 dados) <span class="win-arrow">➔ vence</span> <code>6-6</code> (2 dados)</div>
+            <div class="rule-example"><code>1-2-3</code> (3 dados) <span class="win-arrow">➔ vence</span>
+              <code>6-6</code> (2 dados)</div>
           </li>
-          <li><strong>Tipo de Combinação:</strong> Em caso de empate em tamanho, <strong>Dados Iguais</strong> vencem <strong>Sequência</strong>.
-            <div class="rule-example"><code>4-4-4</code> (Trinca) <span class="win-arrow">➔ vence</span> <code>2-3-4</code> (Sequência)</div>
+          <li><strong>Tipo de Combinação:</strong> Em caso de empate em tamanho, <strong>Dados Iguais</strong> vencem
+            <strong>Sequência</strong>.
+            <div class="rule-example"><code>4-4-4</code> (Trinca) <span class="win-arrow">➔ vence</span>
+              <code>2-3-4</code> (Sequência)</div>
           </li>
           <li><strong>Valor do Grupo:</strong> Em empate de tamanho e tipo:
             <ul>
-              <li>Para <strong>Dados Iguais</strong>: Vence o de maior valor (<code>6-6-6</code> vence <code>4-4-4</code>).</li>
-              <li>Para <strong>Sequências</strong>: Vence a que termina com o maior valor (<code>4-5-6</code> vence <code>2-3-4</code>, pois 6 é maior que 4).</li>
+              <li>Para <strong>Dados Iguais</strong>: Vence o de maior valor (<code>6-6-6</code> vence
+                <code>4-4-4</code>).</li>
+              <li>Para <strong>Sequências</strong>: Vence a que termina com o maior valor (<code>4-5-6</code> vence
+                <code>2-3-4</code>, pois 6 é maior que 4).</li>
             </ul>
           </li>
         </ol>
@@ -143,11 +195,14 @@
 
       <div class="concept-block">
         <h3>📥 Guardar Dados</h3>
-        <p>Ao final da sua jogada, se restou algum dado físico da rolagem que não foi usado na combinação, você pode <strong>guardá-lo</strong>:</p>
+        <p>Ao final da sua jogada, se restou algum dado físico da rolagem que não foi usado na combinação, você pode
+          <strong>guardá-lo</strong>:</p>
         <ul class="styled-list">
-          <li>Coloque <strong>1 Meeple</strong> da sua cor no tabuleiro sobre o desenho da face correspondente ao dado guardado.</li>
+          <li>Coloque <strong>1 Meeple</strong> da sua cor no tabuleiro sobre o desenho da face correspondente ao dado
+            guardado.</li>
           <li>Você pode ter no máximo **5 dados guardados** (pois só possui 5 meeples para marcar reserva).</li>
-          <li>Em rodadas futuras, você pode resgatar esses dados retirando o seu meeple e somando o dado à sua Jogada Ativa.</li>
+          <li>Em rodadas futuras, você pode resgatar esses dados retirando o seu meeple e somando o dado à sua Jogada
+            Ativa.</li>
         </ul>
       </div>
     </section>
@@ -156,7 +211,7 @@
     <section id="turno" class="section-card scroll-margin">
       <h2>🔄 Estrutura do Turno</h2>
       <p>Os jogadores jogam em sentido horário. No seu turno, realize as seguintes fases:</p>
-      
+
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-num">1</div>
@@ -165,7 +220,7 @@
             <p>Pegue os 4 dados físicos do jogo e role-os no centro da mesa.</p>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-num">2</div>
           <div class="timeline-body">
@@ -173,22 +228,26 @@
             <div class="action-choices">
               <div class="action-card primary-border">
                 <h4>Opção A: Vencer a Jogada Ativa</h4>
-                <p>Crie uma combinação com seus dados rolados e/ou dados resgatados do seu tabuleiro que supere a Jogada Ativa atual.</p>
+                <p>Crie uma combinação com seus dados rolados e/ou dados resgatados do seu tabuleiro que supere a Jogada
+                  Ativa atual.</p>
                 <div class="action-steps">
                   <span>1. Remova as Pedras Brancas anteriores do tabuleiro.</span>
                   <span>2. Coloque as Pedras Brancas nos números da sua nova combinação.</span>
                   <span>3. (Opcional) Guarde 1 dado sobressalente da rolagem física com seu Meeple.</span>
                 </div>
               </div>
-              
+
               <div class="action-card secondary-border">
                 <h4>Opção B: Retirar Dado (Scout)</h4>
                 <p>Use esta opção se não conseguir (ou não quiser) vencer a Jogada Ativa atual na mesa.</p>
                 <div class="action-steps">
                   <span>1. O oponente que fez a jogada ativa ganha **1 ponto** na trilha do tabuleiro.</span>
-                  <span>2. Retire **um dado das extremidades** da Jogada Ativa atual (remova 1 pedra branca correspondente).</span>
-                  <span>3. Tente fazer uma combinação vencedora somando esse dado retirado aos seus dados rolados e/ou guardados.</span>
-                  <span>4. *Se ainda não conseguir:* O oponente ganha **mais 1 ponto**, você retira **mais um dado** da extremidade, e repete o ciclo até conseguir vencer a jogada residual.</span>
+                  <span>2. Retire **um dado das extremidades** da Jogada Ativa atual (remova 1 pedra branca
+                    correspondente).</span>
+                  <span>3. Tente fazer uma combinação vencedora somando esse dado retirado aos seus dados rolados e/ou
+                    guardados.</span>
+                  <span>4. *Se ainda não conseguir:* O oponente ganha **mais 1 ponto**, você retira **mais um dado** da
+                    extremidade, e repete o ciclo até conseguir vencer a jogada residual.</span>
                 </div>
               </div>
             </div>
@@ -200,8 +259,10 @@
     <!-- Seção: Exemplo Prático -->
     <section id="exemplo" class="section-card scroll-margin">
       <h2>📝 Exemplo Prático (Simulação de Partida)</h2>
-      <p class="intro-desc">Acompanhe a simulação de uma partida de 2 jogadores: <strong>Jogador 1 (J1 - Meeples Azuis)</strong> e <strong>Jogador 2 (J2 - Meeples Verdes)</strong>. Note como o tabuleiro se altera a cada passo do manual:</p>
-      
+      <p class="intro-desc">Acompanhe a simulação de uma partida de 2 jogadores: <strong>Jogador 1 (J1 - Meeples
+          Azuis)</strong> e <strong>Jogador 2 (J2 - Meeples Verdes)</strong>. Note como o tabuleiro se altera a cada
+        passo do manual:</p>
+
       <div class="manual-steps">
 
         <!-- TURNO 1 -->
@@ -213,14 +274,16 @@
           <div class="step-grid">
             <div class="step-description">
               <p><strong>Rolagem de J1:</strong> <code>3, 4, 4, 6</code></p>
-              <p><strong>Ação:</strong> J1 decide guardar o dado <code>6</code> no tabuleiro para rodadas futuras. Ele usa a dupla de <code>4</code> para fazer a jogada inicial.</p>
+              <p><strong>Ação:</strong> J1 decide guardar o dado <code>6</code> no tabuleiro para rodadas futuras. Ele
+                usa a dupla de <code>4</code> para fazer a jogada inicial.</p>
               <ul class="step-bullets">
                 <li>Coloca 1 Meeple Azul na face <code>6</code> do tabuleiro.</li>
-                <li>Anuncia <strong>`4-4`</strong> (Par de 4) como a Jogada Ativa inicial e marca com 2 pedras brancas na face <code>4</code> do tabuleiro.</li>
+                <li>Anuncia <strong>`4-4`</strong> (Par de 4) como a Jogada Ativa inicial e marca com 2 pedras brancas
+                  na face <code>4</code> do tabuleiro.</li>
                 <li>O dado <code>3</code> rolado é descartado/não utilizado no turno.</li>
               </ul>
             </div>
-            
+
             <div class="board-diagram">
               <div class="diagram-header">
                 <div class="diagram-title">Visualização do Tabuleiro</div>
@@ -229,47 +292,50 @@
                   <span class="score-badge j2-badge">J2: 0 pts</span>
                 </div>
               </div>
-              <div class="board-grid">
-                <!-- Dado 1 -->
-                <div class="board-cell">
-                  <div class="cell-num">1</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 2 -->
-                <div class="board-cell">
-                  <div class="cell-num">2</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 3 -->
-                <div class="board-cell">
-                  <div class="cell-num">3</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 4 (Jogada Ativa J1) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">4</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
-                    <span class="stone" title="Pedra Branca"></span>
+              <div class="board-wrapper">
+                <div class="board-grid">
+                  <!-- Dado 1 -->
+                  <div class="board-cell">
+                    <div class="cell-num">1</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Jogada Ativa</span>
-                </div>
-                <!-- Dado 5 -->
-                <div class="board-cell">
-                  <div class="cell-num">5</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 6 (Guardado J1) -->
-                <div class="board-cell guarded-cell-j1">
-                  <div class="cell-num">6</div>
-                  <div class="cell-content">
-                    <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 6">
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+                  <!-- Dado 2 -->
+                  <div class="board-cell">
+                    <div class="cell-num">2</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Reserva J1</span>
+                  <!-- Dado 3 -->
+                  <div class="board-cell">
+                    <div class="cell-num">3</div>
+                    <div class="cell-content"></div>
+                  </div>
+                  <!-- Dado 4 (Jogada Ativa J1) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">4</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
+                    <span class="cell-tag">Jogada Ativa</span>
+                  </div>
+                  <!-- Dado 5 -->
+                  <div class="board-cell">
+                    <div class="cell-num">5</div>
+                    <div class="cell-content"></div>
+                  </div>
+                  <!-- Dado 6 (Guardado J1) -->
+                  <div class="board-cell guarded-cell-j1">
+                    <div class="cell-num">6</div>
+                    <div class="cell-content">
+                      <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 6">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Reserva J1</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -285,14 +351,17 @@
           <div class="step-grid">
             <div class="step-description">
               <p><strong>Rolagem de J2:</strong> <code>1, 2, 3, 5</code></p>
-              <p><strong>Ação:</strong> J2 precisa vencer o Par de <code>4</code> (tamanho 2) do oponente. Ele escolhe fazer uma Sequência de 3 dados usando os números <code>1, 2, 3</code> (tamanho 3).</p>
+              <p><strong>Ação:</strong> J2 precisa vencer o Par de <code>4</code> (tamanho 2) do oponente. Ele escolhe
+                fazer uma Sequência de 3 dados usando os números <code>1, 2, 3</code> (tamanho 3).</p>
               <ul class="step-bullets">
                 <li>Como uma jogada de tamanho 3 vence uma de tamanho 2, J2 vence a Jogada Ativa.</li>
-                <li>As pedras brancas do número <code>4</code> são retiradas. J2 posiciona 3 pedras brancas: uma no <code>1</code>, no <code>2</code> e no <code>3</code> do tabuleiro.</li>
-                <li>J2 guarda o dado <code>5</code> que sobrou de sua rolagem (coloca 1 Meeple Verde na face <code>5</code>).</li>
+                <li>As pedras brancas do número <code>4</code> são retiradas. J2 posiciona 3 pedras brancas: uma no
+                  <code>1</code>, no <code>2</code> e no <code>3</code> do tabuleiro.</li>
+                <li>J2 guarda o dado <code>5</code> que sobrou de sua rolagem (coloca 1 Meeple Verde na face
+                  <code>5</code>).</li>
               </ul>
             </div>
-            
+
             <div class="board-diagram">
               <div class="diagram-header">
                 <div class="diagram-title">Visualização do Tabuleiro</div>
@@ -301,57 +370,61 @@
                   <span class="score-badge j2-badge">J2: 0 pts</span>
                 </div>
               </div>
-              <div class="board-grid">
-                <!-- Dado 1 (Ativa J2) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">1</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
+              <div class="board-wrapper">
+                <div class="board-grid">
+                  <!-- Dado 1 (Ativa J2) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">1</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
                   </div>
-                </div>
-                <!-- Dado 2 (Ativa J2) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">2</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
+                  <!-- Dado 2 (Ativa J2) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">2</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
                   </div>
-                </div>
-                <!-- Dado 3 (Ativa J2) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">3</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
+                  <!-- Dado 3 (Ativa J2) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">3</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
+                    <span class="cell-tag">Jogada Ativa</span>
                   </div>
-                  <span class="cell-tag">Jogada Ativa</span>
-                </div>
-                <!-- Dado 4 (Livre) -->
-                <div class="board-cell">
-                  <div class="cell-num">4</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 5 (Guardado J2) -->
-                <div class="board-cell guarded-cell-j2">
-                  <div class="cell-num">5</div>
-                  <div class="cell-content">
-                    <span class="meeple meeple-green" title="Meeple Verde (J2) Guardando o 5">
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+                  <!-- Dado 4 (Livre) -->
+                  <div class="board-cell">
+                    <div class="cell-num">4</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Reserva J2</span>
-                </div>
-                <!-- Dado 6 (Guardado J1) -->
-                <div class="board-cell guarded-cell-j1">
-                  <div class="cell-num">6</div>
-                  <div class="cell-content">
-                    <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 6">
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+                  <!-- Dado 5 (Guardado J2) -->
+                  <div class="board-cell guarded-cell-j2">
+                    <div class="cell-num">5</div>
+                    <div class="cell-content">
+                      <span class="meeple meeple-green" title="Meeple Verde (J2) Guardando o 5">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Reserva J2</span>
                   </div>
-                  <span class="cell-tag">Reserva J1</span>
+                  <!-- Dado 6 (Guardado J1) -->
+                  <div class="board-cell guarded-cell-j1">
+                    <div class="cell-num">6</div>
+                    <div class="cell-content">
+                      <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 6">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Reserva J1</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,15 +440,20 @@
           <div class="step-grid">
             <div class="step-description">
               <p><strong>Rolagem de J1:</strong> <code>2, 3, 6, 6</code></p>
-              <p><strong>Ação:</strong> J1 precisa superar a Sequência de 3 dados <code>1-2-3</code> de J2. Ele faz isso jogando uma Trinca de 6 (mesmo tamanho, mas Dados Iguais vence Sequência).</p>
+              <p><strong>Ação:</strong> J1 precisa superar a Sequência de 3 dados <code>1-2-3</code> de J2. Ele faz isso
+                jogando uma Trinca de 6 (mesmo tamanho, mas Dados Iguais vence Sequência).</p>
               <ul class="step-bullets">
-                <li>J1 retira o Meeple Azul do <code>6</code> no tabuleiro, resgatando esse dado guardado no Turno 1.</li>
-                <li>Ele junta o <code>6</code> resgatado com os dois dados <code>6</code> que acabou de rolar, anunciando a Jogada Ativa **`6-6-6`** (Trinca de 6).</li>
-                <li>As pedras brancas dos números <code>1, 2, 3</code> são removidas e reposicionadas na face <code>6</code> (x3).</li>
-                <li>Com os dados restantes rolados (<code>2, 3</code>), J1 escolhe guardar o <code>3</code> colocando seu meeple azul sobre o <code>3</code> no tabuleiro.</li>
+                <li>J1 retira o Meeple Azul do <code>6</code> no tabuleiro, resgatando esse dado guardado no Turno 1.
+                </li>
+                <li>Ele junta o <code>6</code> resgatado com os dois dados <code>6</code> que acabou de rolar,
+                  anunciando a Jogada Ativa **`6-6-6`** (Trinca de 6).</li>
+                <li>As pedras brancas dos números <code>1, 2, 3</code> são removidas e reposicionadas na face
+                  <code>6</code> (x3).</li>
+                <li>Com os dados restantes rolados (<code>2, 3</code>), J1 escolhe guardar o <code>3</code> colocando
+                  seu meeple azul sobre o <code>3</code> no tabuleiro.</li>
               </ul>
             </div>
-            
+
             <div class="board-diagram">
               <div class="diagram-header">
                 <div class="diagram-title">Visualização do Tabuleiro</div>
@@ -384,55 +462,59 @@
                   <span class="score-badge j2-badge">J2: 0 pts</span>
                 </div>
               </div>
-              <div class="board-grid">
-                <!-- Dado 1 -->
-                <div class="board-cell">
-                  <div class="cell-num">1</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 2 -->
-                <div class="board-cell">
-                  <div class="cell-num">2</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 3 (Guardado J1) -->
-                <div class="board-cell guarded-cell-j1">
-                  <div class="cell-num">3</div>
-                  <div class="cell-content">
-                    <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 3">
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+              <div class="board-wrapper">
+                <div class="board-grid">
+                  <!-- Dado 1 -->
+                  <div class="board-cell">
+                    <div class="cell-num">1</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Reserva J1</span>
-                </div>
-                <!-- Dado 4 -->
-                <div class="board-cell">
-                  <div class="cell-num">4</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 5 (Guardado J2) -->
-                <div class="board-cell guarded-cell-j2">
-                  <div class="cell-num">5</div>
-                  <div class="cell-content">
-                    <span class="meeple meeple-green" title="Meeple Verde (J2) Guardando o 5">
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+                  <!-- Dado 2 -->
+                  <div class="board-cell">
+                    <div class="cell-num">2</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Reserva J2</span>
-                </div>
-                <!-- Dado 6 (Ativa J1) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">6</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
-                    <span class="stone" title="Pedra Branca"></span>
-                    <span class="stone" title="Pedra Branca"></span>
+                  <!-- Dado 3 (Guardado J1) -->
+                  <div class="board-cell guarded-cell-j1">
+                    <div class="cell-num">3</div>
+                    <div class="cell-content">
+                      <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 3">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Reserva J1</span>
                   </div>
-                  <span class="cell-tag">Jogada Ativa</span>
+                  <!-- Dado 4 -->
+                  <div class="board-cell">
+                    <div class="cell-num">4</div>
+                    <div class="cell-content"></div>
+                  </div>
+                  <!-- Dado 5 (Guardado J2) -->
+                  <div class="board-cell guarded-cell-j2">
+                    <div class="cell-num">5</div>
+                    <div class="cell-content">
+                      <span class="meeple meeple-green" title="Meeple Verde (J2) Guardando o 5">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Reserva J2</span>
+                  </div>
+                  <!-- Dado 6 (Ativa J1) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">6</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                      <span class="stone" title="Pedra Branca"></span>
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
+                    <span class="cell-tag">Jogada Ativa</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -447,17 +529,26 @@
           </div>
           <div class="step-grid">
             <div class="step-description">
-              <p><strong>Rolagem de J2:</strong> <code>2, 2, 4, 4</code> (mais o <code>5</code> guardado no tabuleiro)</p>
-              <p><strong>Ação:</strong> J2 percebe que seus dados não podem bater a Trinca de <code>6</code> (tamanho 3) de J1. Ele é obrigado a fazer um **Scout (Retirar Dado)**:</p>
+              <p><strong>Rolagem de J2:</strong> <code>2, 2, 4, 4</code> (mais o <code>5</code> guardado no tabuleiro)
+              </p>
+              <p><strong>Ação:</strong> J2 percebe que seus dados não podem bater a Trinca de <code>6</code> (tamanho 3)
+                de J1. Ele é obrigado a fazer um **Scout (Retirar Dado)**:</p>
               <ul class="step-bullets">
-                <li><strong>Pontuação:</strong> O criador da jogada ativa (J1) ganha **1 ponto** imediatamente na trilha de pontos.</li>
-                <li><strong>Scout:</strong> J2 retira um dado <code>6</code> da extremidade da jogada ativa (removendo uma pedra branca do <code>6</code>). A jogada ativa restante na mesa é enfraquecida, virando **`6-6`** (Par de 6, tamanho 2).</li>
-                <li><strong>Combinação:</strong> Agora com o <code>6</code> retirado em mãos, J2 o combina com o <code>5</code> resgatado (retirando seu meeple verde do <code>5</code>) e com um <code>4</code> rolado, formando a Sequência **`4-5-6`** (tamanho 3).</li>
-                <li>Como a sequência de tamanho 3 (`4-5-6`) vence a Jogada Ativa restante de tamanho 2 (`6-6`), J2 completa seu turno! As pedras brancas são postas no <code>4, 5, 6</code>.</li>
-                <li>J2 guarda o outro dado <code>4</code> que sobrou de sua rolagem (coloca 1 Meeple Verde no <code>4</code>).</li>
+                <li><strong>Pontuação:</strong> O criador da jogada ativa (J1) ganha **1 ponto** imediatamente na trilha
+                  de pontos.</li>
+                <li><strong>Scout:</strong> J2 retira um dado <code>6</code> da extremidade da jogada ativa (removendo
+                  uma pedra branca do <code>6</code>). A jogada ativa restante na mesa é enfraquecida, virando **`6-6`**
+                  (Par de 6, tamanho 2).</li>
+                <li><strong>Combinação:</strong> Agora com o <code>6</code> retirado em mãos, J2 o combina com o
+                  <code>5</code> resgatado (retirando seu meeple verde do <code>5</code>) e com um <code>4</code>
+                  rolado, formando a Sequência **`4-5-6`** (tamanho 3).</li>
+                <li>Como a sequência de tamanho 3 (`4-5-6`) vence a Jogada Ativa restante de tamanho 2 (`6-6`), J2
+                  completa seu turno! As pedras brancas são postas no <code>4, 5, 6</code>.</li>
+                <li>J2 guarda o outro dado <code>4</code> que sobrou de sua rolagem (coloca 1 Meeple Verde no
+                  <code>4</code>).</li>
               </ul>
             </div>
-            
+
             <div class="board-diagram">
               <div class="diagram-header">
                 <div class="diagram-title">Visualização do Tabuleiro</div>
@@ -466,56 +557,60 @@
                   <span class="score-badge j2-badge">J2: 0 pts</span>
                 </div>
               </div>
-              <div class="board-grid">
-                <!-- Dado 1 -->
-                <div class="board-cell">
-                  <div class="cell-num">1</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 2 -->
-                <div class="board-cell">
-                  <div class="cell-num">2</div>
-                  <div class="cell-content"></div>
-                </div>
-                <!-- Dado 3 (Guardado J1) -->
-                <div class="board-cell guarded-cell-j1">
-                  <div class="cell-num">3</div>
-                  <div class="cell-content">
-                    <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 3">
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+              <div class="board-wrapper">
+                <div class="board-grid">
+                  <!-- Dado 1 -->
+                  <div class="board-cell">
+                    <div class="cell-num">1</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Reserva J1</span>
-                </div>
-                <!-- Dado 4 (Ativa J2 + Guardado J2) -->
-                <div class="board-cell active-cell guarded-cell-j2">
-                  <div class="cell-num">4</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
-                    <span class="meeple meeple-green m-mini" title="Meeple Verde (J2) Guardando o 4">
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                        <path d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z"/>
-                      </svg>
-                    </span>
+                  <!-- Dado 2 -->
+                  <div class="board-cell">
+                    <div class="cell-num">2</div>
+                    <div class="cell-content"></div>
                   </div>
-                  <span class="cell-tag">Ativa + Res J2</span>
-                </div>
-                <!-- Dado 5 (Ativa J2) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">5</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
+                  <!-- Dado 3 (Guardado J1) -->
+                  <div class="board-cell guarded-cell-j1">
+                    <div class="cell-num">3</div>
+                    <div class="cell-content">
+                      <span class="meeple meeple-blue" title="Meeple Azul (J1) Guardando o 3">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Reserva J1</span>
                   </div>
-                </div>
-                <!-- Dado 6 (Ativa J2) -->
-                <div class="board-cell active-cell">
-                  <div class="cell-num">6</div>
-                  <div class="cell-content">
-                    <span class="stone" title="Pedra Branca"></span>
+                  <!-- Dado 4 (Ativa J2 + Guardado J2) -->
+                  <div class="board-cell active-cell guarded-cell-j2">
+                    <div class="cell-num">4</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                      <span class="meeple meeple-green m-mini" title="Meeple Verde (J2) Guardando o 4">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                          <path
+                            d="M12 2c1.38 0 2.5 1.12 2.5 2.5S13.38 7 12 7 9.5 5.88 9.5 4.5 10.62 2 12 2zm3.5 6.5c-1-.5-2.5-.5-3.5-.5s-2.5 0-3.5.5C7.2 9.2 6.5 10.5 6.5 12c0 1.2.6 2.2 1.5 2.8l-.8 5.6c-.1.7.5 1.3 1.2 1.3.6 0 1.1-.4 1.2-1l.7-4.2h3.4l.7 4.2c.1.6.6 1 1.2 1 .7 0 1.3-.6 1.2-1.3l-.8-5.6c.9-.6 1.5-1.6 1.5-2.8 0-1.5-.7-2.8-2-3.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="cell-tag">Ativa + Res J2</span>
                   </div>
-                  <span class="cell-tag">Jogada Ativa</span>
+                  <!-- Dado 5 (Ativa J2) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">5</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
+                  </div>
+                  <!-- Dado 6 (Ativa J2) -->
+                  <div class="board-cell active-cell">
+                    <div class="cell-num">6</div>
+                    <div class="cell-content">
+                      <span class="stone" title="Pedra Branca"></span>
+                    </div>
+                    <span class="cell-tag">Jogada Ativa</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -533,12 +628,15 @@
         <div class="condition-card">
           <div class="condition-num">1</div>
           <h4>Vitória por Pontuação</h4>
-          <p>O primeiro jogador a registrar <strong>15 pontos</strong> na trilha de pontuação do tabuleiro vence a partida imediatamente.</p>
+          <p>O primeiro jogador a registrar <strong>15 pontos</strong> na trilha de pontuação do tabuleiro vence a
+            partida imediatamente.</p>
         </div>
         <div class="condition-card">
           <div class="condition-num">2</div>
           <h4>Partida por Rodadas</h4>
-          <p>Alternativamente, os jogadores podem concordar em jogar um número fixo de rodadas (como 3 rodadas completas). Nesse caso, o jogador com a maior pontuação acumulada na trilha de pontos ao final de todas as rodadas é o vencedor.</p>
+          <p>Alternativamente, os jogadores podem concordar em jogar um número fixo de rodadas (como 3 rodadas
+            completas). Nesse caso, o jogador com a maior pontuação acumulada na trilha de pontos ao final de todas as
+            rodadas é o vencedor.</p>
         </div>
       </div>
     </section>
@@ -551,4 +649,5 @@
   </footer>
 
 </body>
+
 </html>

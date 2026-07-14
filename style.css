@@ -756,7 +756,6 @@ blockquote strong {
   color: var(--primary);
 }
 
-/* Tabuleiro Esquemático (Visual) */
 .board-diagram {
   background: rgba(15, 23, 42, 0.6);
   border: 2px solid #334155;
@@ -766,6 +765,18 @@ blockquote strong {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.board-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.375; /* Proporção do Tabuleiro Real (1408x1024) */
+  background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('assets/Tabuleiro Batalha de Dados.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 }
 
 .diagram-header {
@@ -818,16 +829,22 @@ blockquote strong {
 }
 
 .board-grid {
+  position: absolute;
+  left: 11.5%;
+  top: 13.2%;
+  width: 79.9%;
+  height: 63.0%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.33% 1.33%;
 }
 
 .board-cell {
-  background: rgba(30, 41, 59, 0.4);
-  border: 1px solid #334155;
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: var(--border-radius-sm);
-  aspect-ratio: 1.1;
+  aspect-ratio: auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -838,12 +855,7 @@ blockquote strong {
 }
 
 .cell-num {
-  position: absolute;
-  top: 4px;
-  left: 6px;
-  font-weight: 800;
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  display: none; /* Ocultar números redundantes já que constam na imagem real */
 }
 
 .cell-content {
@@ -870,36 +882,24 @@ blockquote strong {
 }
 
 /* Modificadores Visuais das Células */
-.active-cell {
-  border-color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-}
-
+/* Modificadores Visuais das Células */
 .active-cell .cell-tag {
   color: var(--text-title);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .active-cell .cell-num {
   color: var(--text-title);
 }
 
-.guarded-cell-j1 {
-  border-color: rgba(59, 130, 246, 0.4);
-  background: rgba(59, 130, 246, 0.06);
-}
-
 .guarded-cell-j1 .cell-tag {
-  color: #60a5fa;
-}
-
-.guarded-cell-j2 {
-  border-color: rgba(16, 185, 129, 0.4);
-  background: rgba(16, 185, 129, 0.06);
+  color: #93c5fd;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .guarded-cell-j2 .cell-tag {
-  color: #34d399;
+  color: #6ee7b7;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Meeples Estilizados */
