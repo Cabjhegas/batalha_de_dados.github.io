@@ -27,6 +27,7 @@
   --color-j2: #10b981; /* Verde/Esmeralda */
   --color-j2-glow: rgba(16, 185, 129, 0.3);
   --color-j3: #ef4444; /* Vermelho (opcional) */
+  --color-j3-glow: rgba(239, 68, 68, 0.3);
   
   /* Componentes do Jogo */
   --die-bg: #1e293b;
@@ -384,8 +385,9 @@ code {
   display: inline-block;
   width: 14px;
   height: 14px;
+  border-radius: 50%;
   background-color: currentColor;
-  clip-path: polygon(50% 0%, 80% 25%, 65% 50%, 90% 75%, 65% 85%, 75% 100%, 25% 100%, 35% 85%, 10% 75%, 35% 50%, 20% 25%);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.35);
 }
 
 .stone-preview {
@@ -822,6 +824,53 @@ blockquote strong {
   pointer-events: none;
 }
 
+/* Trilha de pontuação (overlay nos 15 quadrados do topo) */
+.score-track {
+  /* Meio cell (~2.7%) à esquerda: o marcador calava na divisa 1|2 */
+  --track-left: 7.8%;
+  --track-width: 81.8%;
+  --track-top: 5.0%;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.score-meeple {
+  position: absolute;
+  top: var(--track-top);
+  width: clamp(12px, 3.2%, 20px);
+  aspect-ratio: 1;
+  left: calc(var(--track-left) + (var(--score) - 0.5) / 15 * var(--track-width));
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.9),
+    inset -1.5px -1.5px 3px rgba(0, 0, 0, 0.35);
+  animation: none;
+  z-index: 3;
+}
+
+/* Empilha em diagonal para não sobrepor no mesmo ponto */
+.score-meeple.meeple-blue {
+  transform: translate(-90%, -55%);
+  filter: drop-shadow(0 0 4px var(--color-j1-glow));
+}
+
+.score-meeple.meeple-green {
+  transform: translate(-10%, 55%);
+  filter: drop-shadow(0 0 4px var(--color-j2-glow));
+}
+
+.score-meeple.highlight-meeple {
+  animation: pulse-score-meeple 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse-score-meeple {
+  0%, 100% { filter: drop-shadow(0 0 3px currentColor); }
+  50% { filter: drop-shadow(0 0 10px currentColor); }
+}
+
 .diagram-header {
   display: flex;
   justify-content: space-between;
@@ -946,12 +995,22 @@ blockquote strong {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Meeples Estilizados */
+/* Marcadores de jogador (círculos coloridos) */
 .meeple {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.55),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.3);
   animation: float-meeple 3s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+.meeple svg {
+  display: none;
 }
 
 .m-mini {
@@ -963,12 +1022,17 @@ blockquote strong {
 
 .meeple-blue {
   color: var(--color-j1);
-  filter: drop-shadow(0 2px 6px var(--color-j1-glow));
+  filter: drop-shadow(0 0 5px var(--color-j1-glow));
 }
 
 .meeple-green {
   color: var(--color-j2);
-  filter: drop-shadow(0 2px 6px var(--color-j2-glow));
+  filter: drop-shadow(0 0 5px var(--color-j2-glow));
+}
+
+.meeple-red {
+  color: var(--color-j3);
+  filter: drop-shadow(0 0 5px var(--color-j3-glow));
 }
 
 @keyframes float-meeple {
